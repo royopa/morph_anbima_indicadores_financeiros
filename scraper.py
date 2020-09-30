@@ -9,6 +9,8 @@ import scraperwiki
 
 import utils
 
+os.environ['SCRAPERWIKI_DATABASE_NAME'] = 'sqlite:///data.sqlite'
+
 utils.prepare_download_folder('bases')
 
 url = 'https://www.anbima.com.br/informacoes/indicadores/'
