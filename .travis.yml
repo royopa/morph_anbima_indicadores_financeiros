@@ -1,0 +1,22 @@
+language: python
+python:
+  - "3.8"
+
+install:
+  - "pip install --upgrade pip"
+  - "pip install -r ./requirements.txt"
+
+script:
+  - "python ./indicadores_anbima.py"
+  - "python ./debentures_mercado_secundario.py"
+  - "python ./idka.py"
+  - "python ./ima_carteiras.py"
+  - "python ./ima_quadro_resumo.py"
+  - "python ./titulos_publicos_mercado_secundario.py"
+
+notifications:
+  email:
+    recipients:
+      - royopa@gmail.com
+    on_success: change # default: change
+    on_failure: change # default: always
