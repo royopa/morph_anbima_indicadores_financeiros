@@ -5,11 +5,10 @@ import shutil
 from datetime import datetime
 
 import pandas as pd
+os.environ['SCRAPERWIKI_DATABASE_NAME'] = 'sqlite:///data.sqlite'
 import scraperwiki
 
 import utils
-
-os.environ['SCRAPERWIKI_DATABASE_NAME'] = 'sqlite:///data.sqlite'
 
 utils.prepare_download_folder('bases')
 
