@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 import os
+import shutil
 from datetime import datetime
 
 import pandas as pd
@@ -101,3 +102,8 @@ for index, row in enumerate(df.to_dict('records')):
         print("Error occurred:", e)
 
 print('Importação realizada com sucesso')
+
+# rename file
+print('Renomeando arquivo sqlite')
+if os.path.exists('scraperwiki.sqlite'):
+    shutil.copy('scraperwiki.sqlite', 'data.sqlite')
