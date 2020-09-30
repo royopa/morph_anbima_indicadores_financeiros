@@ -98,4 +98,5 @@ ENV/
 
 # mypy
 .mypy_cache/
+scraperwiki.sqlite
 downloads/*
