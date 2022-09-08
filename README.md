@@ -1,7 +1,7 @@
 Morph ANBIMA - Indicadores econômicos
 -------------------------------------
 
-ANBIMA scraper é um projeto para captura de dados do site da [ANBIMA](https://www.anbima.com.br/).
+ANBIMA scraper é um projeto para captura de dados do site da [ANBIMA](https://www.anbima.com.br/informacoes/indicadores/).
 
 ## Instalar dependências do projeto
 
